@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* the current time zone container */
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px;
+  background-color: rgb(23, 94, 131);
+}
+
+.container h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* current time-zone box */
+
+.current {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(206, 164, 210);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid rgb(214, 214, 214);
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  padding: 10px 20px;
+  width: 34%;
+  height: auto;
+}
+
+p {
+  padding: 5px 0;
+}
+
+.lat-long {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* input box */
+
+.query {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(220, 84, 140);
+  color: white;
+  gap: 16px;
+  padding: 25px;
+  width: 100%;
+  height: 100vh;
+}
+
+.ins {
+  width: 42%;
+  margin-bottom: 20px;
+}
+
+.query .ins input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgb(214, 214, 214);
+  color: rgb(236, 236, 236);
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.query button {
+  width: 100px;
+  padding: 8px 5px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: brown;
+}
+
+/* error message */
+
+.error {
+  margin: 20px 0;
+  color: red;
+}
+
+/* box for time zone of the given address */
+
+.address {
+  display: none;
+  /* display: flex; */
+  margin-top: -70px;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-around;
+  border: 1px solid white;
+  padding: 10px 20px;
+  width: 35%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
